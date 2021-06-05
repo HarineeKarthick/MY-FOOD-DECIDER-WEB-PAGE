@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+        <title>MY FOOD DECIDER</title>
+        <style>
+            body {
+                text-align:center;
+            }
+            h1 {
+                color:green;
+            }
+        </style>
+</head>
+<body>
+        <h1 style="font-size:250%;">MY FOOD DECIDER</h1>
+</body>
+<head>
+<style>
+body 
+{
+	background-image: url('im3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+</style>
+</head>
+<head>
+<style>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<a href="index.html" class="button" align="center">BACK</a>
+<button onclick="generate()" class="button" align="center">START</button>
+<br>
+<script>
+	var dishes=["DOSA","IDLI","URAD DHAL PORRIDGE","PONGAL","CHAPATHI","PUTTU","IDIYAAPAM","MAGGI","RAVA","POORI MASAAL","ORDER ONLINE","POORI PANNEER"];
+	function generate()
+	{
+		var len=dishes.length;
+		var x = Math.floor((Math.random() * len) + 1);
+		document.getElementById("show").innerHTML=dishes[x-1];
+		var im;
+		switch(dishes[x-1])
+		{
+			case "DOSA":
+				im="tiffin/dosa.jpeg";
+				break;
+			case "IDLI":
+				im="tiffin/idli.jpeg";
+				break;
+			case "URAD DHAL PORRIDGE":
+				im="tiffin/porridge.jpeg";
+				break;
+			case "PONGAL":
+				im="tiffin/pongal.jpeg";
+				break;
+			case "CHAPATHI":
+				im="tiffin/chapathi.jpeg";
+				break;
+			case "PUTTU":
+				im="tiffin/puttu.jpeg";
+				break;
+			case "IDIYAAPAM":
+				im="tiffin/idiyapam.jpeg";
+				break;
+			case "MAGGI":
+				im="tiffin/maggi.jpeg";
+				break;
+			case "RAVA":
+				im="tiffin/upma.jpeg";
+				break;
+			case "ORDER ONLINE":
+				im="online.png";
+				break;
+			case "POORI MASAAL":
+				im="tiffin/poorim.jpeg";
+				break;
+			case "POORI PANNEER":
+				im="tiffin/poorip.jpeg";
+				break;
+		}
+		document.getElementById("image").src=im;
+	}
+</script>
+<img id="image" src="press.png" width="300" height="300">
+<p id="show" align="center" style="color:white;font-size=250%;"></p>
+</body>
+</HTML>
