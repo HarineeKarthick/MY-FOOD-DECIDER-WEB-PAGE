@@ -1,5 +1,5 @@
 # MY-FOOD-DECIDER-WEB-PAGE
-A VERY SIMPLE BUT USEFUL WEBPAGE FOR SOUTH INDIAN MOTHERS :)
+A VERY SIMPLE BUT USEFUL WEBPAGE:)
 I HAVE ATTACHED A DEMO VIDEO OF THIS WORKING PROJECT 
 This is a simple web page that uses HTML,CSS and javascript as tools. This web page is used to decide which food we can prepare as a breakfast,lunch,dinner.
 Actually this project contains 3 html files. index.html , breakfast.html and lunch.html. index.html is the home page. If we click "BREAKFAST" or "DINNER" button
